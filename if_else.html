@@ -9,8 +9,14 @@
         const Quantity  =  parseInt(prompt("enter the quantity of items"));
         
         const Total_Bill = Rate* Quantity;
-        
-    
+        console.log("your total bill is ", Total_Bill)
+        if(Total_Bill>1000)
+        {
+            const  Discount = Total_Bill/10;
+            const Final_amount = Total_Bill-Discount;
+            console.log("Payable_amount",Final_amount,"with Discount",`${Discount}`);
+        }
+       
 
        
 
